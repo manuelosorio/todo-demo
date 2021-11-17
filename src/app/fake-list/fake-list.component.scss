@@ -1,10 +1,5 @@
 @use '../../variables';
-ul,
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+
 .masonry-item {
   width: 100%;
   margin-top: 1rem;
@@ -47,23 +42,4 @@ li {
     display: table;
     clear: both;
   }
-}
-ul {
-  width: 95%;
-  column-gap: 15px;
-  max-width: 1200px;
-  margin: -15px auto;
-  display: flex;
-  flex-basis: 60%;
-  max-height: 800px;
-  flex-flow: column wrap; /* Shorthand – you could use ‘flex-direction: column’ and ‘flex-wrap: wrap’ instead */
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-li {
-  list-style: none;
-  margin: 0.85rem auto;
-  padding: 1rem;
-  position: relative;
-  width: 46%;
 }
