@@ -1,6 +1,8 @@
 <h1>Fake List</h1>
-<ng-container *ngFor="let list of fakeList">
-  <div class="card">
-    <strong>{{ list.title }}</strong>
+<ng-container *ngFor="let list of fakeList" class="lists-container">
+  <div class="masonry-tem">
+    <div class="list card">
+      <strong>{{ list.title }}</strong>
+    </div>
   </div>
 </ng-container>

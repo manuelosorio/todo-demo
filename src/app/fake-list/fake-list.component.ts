@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FakeListService } from '../fake-list.service';
 
 @Component({
   selector: 'fake-list',
   templateUrl: './fake-list.component.html',
-  styleUrls: ['./fake-list.component.css'],
+  styleUrls: ['./fake-list.component.scss'],
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class FakeListComponent implements OnInit {
   fakeList: Array<FakeListModel> = [];
@@ -18,7 +19,6 @@ export class FakeListComponent implements OnInit {
           break;
         }
       }
-      console.log(this.fakeList);
     });
   }
 }
