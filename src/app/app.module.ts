@@ -1,24 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FakeListComponent } from './fake-list/fake-list.component';
 import { FakeListService } from './fake-list.service';
 import { NgxMasonryModule } from './ngx-masonry/ngx-masonry.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    NgxMasonryModule,
-    BrowserAnimationsModule,
-  ],
-  declarations: [AppComponent, HelloComponent, FakeListComponent],
+  imports: [HttpClientModule, NgxMasonryModule, BrowserAnimationsModule],
+  declarations: [AppComponent, FakeListComponent],
   bootstrap: [AppComponent],
   providers: [FakeListService],
 })

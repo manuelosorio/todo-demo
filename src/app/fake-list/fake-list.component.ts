@@ -38,13 +38,10 @@ export class FakeListComponent implements OnInit {
     for (const index in listsObj) {
       if (listsObj.hasOwnProperty(index)) {
         this.masonryLists.push(this.fakeList[index]);
-        // if (this.isBrowser) {
         this.masonry.reloadItems();
         this.masonry.layout();
-        // }
       }
     }
-    console.log(this.masonryLists);
   }
 }
 
