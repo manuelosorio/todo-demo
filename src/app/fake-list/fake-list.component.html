@@ -1,10 +1,14 @@
 <h1>Fake List</h1>
-<ng-container *ngFor="let list of fakeList" class="lists-container">
-  <div class="masonry-tem">
+<ngx-masonry
+  [options]="masonryOptions"
+  [ordered]="true"
+  class="lists-container"
+>
+  <div ngxMasonryItem class="masonry-item" *ngFor="let list of masonryLists">
     <div class="list card">
       <div class="l-row">
         <strong class="card__title">{{ list.title }}</strong>
       </div>
     </div>
   </div>
-</ng-container>
+</ngx-masonry>
