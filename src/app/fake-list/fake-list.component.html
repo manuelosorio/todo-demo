@@ -2,7 +2,9 @@
 <ng-container *ngFor="let list of fakeList" class="lists-container">
   <div class="masonry-tem">
     <div class="list card">
-      <strong>{{ list.title }}</strong>
+      <div class="l-row">
+        <strong class="card__title">{{ list.title }}</strong>
+      </div>
     </div>
   </div>
 </ng-container>
