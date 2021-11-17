@@ -12,7 +12,6 @@
     "@angular/platform-browser-dynamic": "12.2.13",
     "@angular/router": "12.2.13",
     "masonry-layout": "4.2.2",
-    "ngx-masonry": "^12.0.0",
     "rxjs": "7.4.0",
     "tslib": "2.3.1",
     "zone.js": "0.11.4"
