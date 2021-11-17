@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import {
   NgxMasonryComponent,
   NgxMasonryOptions,
-} from '../../ngx-masonry/ngx-masonry';
+} from '../ngx-masonry/ngx-masonry';
 import { FakeListService } from '../fake-list.service';
 
 @Component({
