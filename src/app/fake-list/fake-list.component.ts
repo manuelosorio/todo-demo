@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { NgxMasonryComponent } from 'ngx-masonry/lib/ngx-masonry.component';
 import { FakeListService } from '../fake-list.service';
 
 @Component({
@@ -11,6 +12,7 @@ export class FakeListComponent implements OnInit {
   fakeList: Array<FakeListModel> = [];
   constructor(private fakeListSerivce: FakeListService) {}
 
+  @ViewChild(NgxMasonryComponent) masonry: NgxMasonryComponent;
   ngOnInit() {
     this.fakeListSerivce.getLists().subscribe((res: any) => {
       for (let list of res) {
